@@ -1,0 +1,64 @@
+body{
+    font: 1rem/1.25 'Titillium Web', sans-serif;
+}
+
+.nav{
+    font-size: 0.85rem;
+}
+
+article {
+    height: 360px;
+    overflow: hidden;
+}
+
+#banner {
+    background: url(../lic_high_fidelity_design2-assets/banner.jpg) no-repeat;
+    background-position: 35% 0;
+    background-size: cover;
+    height: 370px;
+}
+
+.flipX {
+    transform: scaleX(-1);
+}
+
+.bg-primary {
+    background-color: #1d4e9e !important;
+}
+
+.text-primary {
+    color: #1d4e9e !important;
+}
+
+.border-primary {
+    border: none;
+    border-top: 2px solid #fcc707 !important;
+}
+
+#callBack {
+    right: 15rem;
+}
+
+article .banner-content{
+    font-size: 1.5rem;
+    width: 440px;
+    padding-top: 5rem;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    article {
+        height: 320px;
+    }
+    #callBack {
+        right: 1rem;
+    }
+    .banner-content{
+        padding-top: 10rem;
+    }
+}
+
+@media (min-width:767px) and (max-width:1024px) {
+    article {
+        height: 320px;
+    }
+}
