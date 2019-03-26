@@ -2,26 +2,6 @@ body{
     font: 1rem/1.25 'Titillium Web', sans-serif;
 }
 
-.nav{
-    font-size: 0.85rem;
-}
-
-article {
-    height: 360px;
-    overflow: hidden;
-}
-
-#banner {
-    background: url(../lic_high_fidelity_design2-assets/banner.jpg) no-repeat;
-    background-position: 35% 0;
-    background-size: cover;
-    height: 370px;
-}
-
-.flipX {
-    transform: scaleX(-1);
-}
-
 .bg-primary {
     background-color: #1d4e9e !important;
 }
@@ -35,30 +15,92 @@ article {
     border-top: 2px solid #fcc707 !important;
 }
 
-#callBack {
-    right: 15rem;
+.nav{
+    font-size: 0.85rem;
 }
 
-article .banner-content{
+/* """""""""banner""""""""" */
+
+.img-crop {
+    height: 360px;
+    overflow: hidden;
+}
+
+#banner-img {
+    background: url(../lic_high_fidelity_design2-assets/banner.jpg) no-repeat;
+    background-position: 35% 0;
+    background-size: cover;
+    height: 370px;
+}
+
+.card-img-overlay{
+    top: 100px;
+}
+
+.flipX {
+    transform: scaleX(-1);
+}
+
+#callBack {
+    right: 12rem;
+}
+
+.banner-content{
     font-size: 1.5rem;
     width: 440px;
-    padding-top: 5rem;
+    margin-top: 5rem;
+}
+
+/* """"""""features"""""""" */
+
+.feature{
+    width: 33.33%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feature1{
+    background: #1d4e9e;
+}
+#feature2{
+    background: #255fbe;
+}
+#feature3{
+    background: #367df1;
 }
 
 @media (min-width:320px) and (max-width:768px) {
-    article {
+    
+    /* """"""""banner"""""""" */
+    .img-crop {
         height: 320px;
+    }
+    #banner img{
+        display: none;
+    }
+    #banner .b-img{
+        background: url(../lic_high_fidelity_design2-assets/banner.jpg) no-repeat 27% 0%;
+        height: 100%;
     }
     #callBack {
         right: 1rem;
     }
     .banner-content{
-        padding-top: 10rem;
+        width: 100%;
+        margin-top: 22rem;
+        text-align: center;
+    }
+
+    /* """""""features""""""" */
+    #features{
+        margin-top: 11rem;
     }
 }
 
-@media (min-width:767px) and (max-width:1024px) {
-    article {
+/* @media (min-width:767px) and (max-width:1024px) {
+    .img-crop {
         height: 320px;
     }
-}
+} */
