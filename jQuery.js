@@ -24,16 +24,22 @@ $(document).ready(function () {
         $(".content").removeClass("m-5");
         $(".content").addClass("mx-4");
         console.log("Screen size: tab");
-    } else if (viewportWidth <= 426) {
+    } else {
         $(".carousel-item > img").css("marginLeft", -(imgWidth * 0.23));
         $("#feature3 > p").css("paddingRight", "unset");
         $("#feature1 > p").css("paddingLeft", "unset");
         $(".banner-content").removeClass(["ml-auto", "position-relative"]);
-        $(".banner-content").css({marginTop: "1rem", width: "100%"});
+        $(".banner-content").css({
+            marginTop: "1rem",
+            width: "100%"
+        });
         $("#callBack").removeClass("position-absolute");
         $(".carousel-caption").removeAttr("class");
         $("#bannerCaption").addClass(["px-5", "py-3"]);
-        $("#bannerCaption").css({marginTop: "5rem", backgroundColor: "#00000022"});
+        $("#bannerCaption").css({
+            marginTop: "5rem",
+            backgroundColor: "#00000022"
+        });
         $("#about").css("margin", "2rem 0rem");
         console.log("Screen size: sm");
     }

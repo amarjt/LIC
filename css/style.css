@@ -50,16 +50,13 @@ body {
     left: unset;
     padding: unset;
     text-align: unset;
+    top: 120px;
 }
 
 .carousel-item {
     height: 360px;
     overflow: hidden;
 }
-
-/* .carousel-item img {
-    width: unset !important;
-} */
 
 .flipX {
     transform: scaleX(-1);
