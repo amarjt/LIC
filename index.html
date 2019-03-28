@@ -150,33 +150,7 @@
         </div>
     </div>
 
-    <div class="carousel-caption" id="bannerCaption">
-        <button id="callBack" class="btn btn-primary bg-primary rounded-0 position-absolute" tabindex="-1"
-            data-toggle="modal" data-target="#callBackModal"><i class="fas fa-phone flipX mr-2"></i>Request Call
-            Back</button>
-        <div class="banner-content ml-auto position-relative">
-            <p class="text-primary">Prepare your family to <strong>#BounceBack in life</strong> Plan with our
-                insurance solutions</p>
-            <button class="btn btn-secondary px-4 font-weight-bold" type="button">KNOW
-                MORE</button>
-        </div>
-    </div>
-
-
     <div id="my-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li id="feature1" class="px-sm-4 col-5 active" data-target="#my-carousel" data-slide-to="0"
-                aria-current="location">
-                <p class="w-100 d-inline-block mb-0">NEW POLICY</p>
-            </li>
-            <li id="feature2" class="px-sm-4 col-3" data-target="#my-carousel" data-slide-to="1">
-                <p class="w-100 d-inline-block mb-0">LIC RETIREMENT PLANS</p>
-            </li>
-            <li id="feature3" class="px-sm-4 col-5" data-target="#my-carousel" data-slide-to="2">
-                <p class="w-100 d-block mb-0">LIC MICRO SAVINGS</p>
-            </li>
-        </ol>
-
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block" src="./lic_high_fidelity_design2-assets/banner.jpg" alt="banner image">
@@ -196,6 +170,32 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+
+        <ol class="carousel-indicators">
+            <li id="feature1" class="px-sm-4 col-5 active" data-target="#my-carousel" data-slide-to="0"
+                aria-current="location">
+                <p class="w-100 d-inline-block mb-0">NEW POLICY</p>
+            </li>
+            <li id="feature2" class="px-sm-4 col-3" data-target="#my-carousel" data-slide-to="1">
+                <p class="w-100 d-inline-block mb-0">LIC RETIREMENT PLANS</p>
+            </li>
+            <li id="feature3" class="px-sm-4 col-5" data-target="#my-carousel" data-slide-to="2">
+                <p class="w-100 d-block mb-0">LIC MICRO SAVINGS</p>
+            </li>
+        </ol>
+
+    </div>
+
+    <div class="carousel-caption" id="bannerCaption">
+        <button id="callBack" class="btn btn-primary bg-primary rounded-0 position-absolute" tabindex="-1"
+            data-toggle="modal" data-target="#callBackModal"><i class="fas fa-phone flipX mr-2"></i>Request Call
+            Back</button>
+        <div class="banner-content ml-auto position-relative">
+            <p class="text-primary">Prepare your family to <strong>#BounceBack in life</strong> Plan with our
+                insurance solutions</p>
+            <button class="btn btn-secondary px-4 font-weight-bold" type="button">KNOW
+                MORE</button>
         </div>
     </div>
 
@@ -370,83 +370,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-
-            window.onresize = function () {
-                document.location.reload(true);
-            }
-
-            var viewportWidth = $(window).width();
-            var imgWidth = $(".carousel-item > img").width()
-
-            // setting "height" to crop banner image as per screen width
-
-            // var cropHeight = $(".carousel-item > img").height();
-            // console.log(cropHeight);
-
-            // cropHeight = cropHeight - (cropHeight * 0.15);
-            // $(".carousel-item").height(cropHeight);
-
-            // if (viewportWidth <= 426) {
-            //     $(".banner-content").removeClass("position-relative");
-            //     $(".banner-content").removeClass("ml-auto");
-            //     $("#callBack").removeClass("position-absolute");
-            //     $(".carousel-caption").removeAttr("class");
-            //     $(".banner-content").removeAttr("style");
-            //     $("#bannerCaption").addClass(className);
-            // } else if (426 < viewportWidth <= 768) {
-            //     $(".banner-content").removeAttr("style");
-            //     $(".carousel-item > img").css("marginLeft", -(imgWidth * 0.23));
-            //     $(".banner-content").css("width", 250);
-            //     alert("true");
-            //     $(".content").removeClass("m-5");
-            //     $(".content").addClass("mx-4"); 
-            // } else if (768 < viewportWidth <= 1024) {
-            //     $(".banner-content").removeAttr("style");
-            //     $(".carousel-item > img").css("marginLeft", -(imgWidth * 0.15));
-            // } else if (viewportWidth >= 1440) {
-            //     $(".carousel-item > img").addClass("w-100");
-            //     $(".banner-content").css("width", 450);
-            //     $(".banner-content").removeAttr("style");
-            // }
-
-            if (viewportWidth >= 1440) {
-                $(".carousel-item > img").addClass("w-100");
-                $(".banner-content").css("width", 450);
-                $(".banner-content").removeAttr("style");
-                alert("true");
-            } else if (769 < viewportWidth < 1025) {
-                $(".banner-content").removeAttr("style");
-                $(".carousel-item > img").css("marginLeft", -(imgWidth * 0.15));
-            } else if (426 < viewportWidth < 768) {
-                $(".banner-content").removeAttr("style");
-                $(".carousel-item > img").css("marginLeft", -(imgWidth * 0.23));
-                $(".banner-content").css("width", 250);
-                alert("true");
-                $(".content").removeClass("m-5");
-                $(".content").addClass("mx-4");
-            }
-
-            // else if (viewportWidth <= 425) {
-            //     $(".banner-content").removeClass("position-relative");
-            //     $(".banner-content").removeClass("ml-auto");
-            //     $("#callBack").removeClass("position-absolute");
-            //     $(".carousel-caption").removeAttr("class");
-            //     $(".banner-content").removeAttr("style");
-            //     $("#bannerCaption").addClass(className);
-            // }
-
-            var cropHeight = $(".carousel-item > img").height();
-            console.log(cropHeight);
-
-            cropHeight = cropHeight - (cropHeight * 0.15);
-            $(".carousel-item").height(cropHeight);
-
-        });
-
-    </script>
 
 </body>
 
