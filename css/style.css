@@ -40,6 +40,12 @@ body {
     border-bottom: 2px solid #1d4e9e;
 }
 
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, .7);
+    border-bottom: 2px solid #1d4e9e;
+}
+
 ::selection {
     background-color: #1d4e9e !important;
     color: #fff !important;
@@ -142,6 +148,30 @@ body {
 
 #modalSubmit {
     width: unset !important;
+}
+
+/* """"""""chat box"""""""" */
+
+.chat-img::after {
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    right: 0.5rem;
+    top: 0rem;
+    border-radius: 50%;
+    background: #56af00;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+    border-left-color: #56af00;
+}
+
+.tooltip-inner {
+    background-color: #56af00;
+    border-radius: 0;
+    padding: 0.25rem 0.75rem;
 }
 
 

@@ -49,4 +49,7 @@ $(document).ready(function () {
     cropHeight = cropHeight - (cropHeight * 0.15);
     $(".carousel-item").height(cropHeight);
 
+    // tooltip :: jQuery by-default procedure of BS4
+    $('[data-toggle="tooltip"]').tooltip();
+
 });
