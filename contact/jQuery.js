@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    window.onresize = function () {
-        document.location.reload(true);
-    }
+    // window.onresize = function () {
+    //     document.location.reload(true);
+    // }
 
     var viewportWidth = $(window).width();
     var imgWidth = $(".carousel-item > img").width()
