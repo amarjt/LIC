@@ -41,6 +41,8 @@ $(document).ready(function () {
             backgroundColor: "#00000022"
         });
         $("#about").css("margin", "2rem 0rem");
+        $(".chat-img > a").removeAttr("data-placement");
+        $(".chat-img > a").attr("data-placement", "bottom");
         console.log("Screen size: sm");
     }
 

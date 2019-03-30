@@ -163,9 +163,14 @@ body {
     background: #56af00;
 }
 
-.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-auto .arrow::before,
 .bs-tooltip-left .arrow::before {
     border-left-color: #56af00;
+}
+
+.bs-tooltip-auto .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #56af00;
 }
 
 .tooltip-inner {
